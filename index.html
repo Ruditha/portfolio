@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilvashini - Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h1>Vilvashini</h1>
+            <h2>Student  Full  Stack  Developer</h2>
+            <p class="tagline">Crafting Clean Code & Creative Solutions</p>
+                
+            <button class="btn-primary"><a href="#contact" style="text-decoration-line: none; color: aliceblue;">Contact</a></button>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/vilvashini-thirukanimuthu-0b39b1303/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Ruditha" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="home-image">
+            <img src="./images/mypic.png" alt="Vilvashini - Full Stack Developer">
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="./images/web.png" alt="About Vilvashini">
+            </div>
+            <div class="about-content">
+                <p>I'm Vilvashini, a Full Stack Developer and a B.E. Computer Science and Design student. I enjoy building clean, responsive web apps and turning ideas into digital solutions.</p>
+                <p>I work with HTML, CSS, JavaScript, React, and Firebase, and I'm exploring backend tech too. I love hackathons, UI/UX design, and always learning something new.</p>
+                <p>Let's build something impactful together!</p>
+                <button class="btn-primary"><a href=resume.pdf style="text-decoration-line: none; color: aliceblue;" target="_blank">View resume</a></button>
+                
+            </div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">2021</div>
+                <div class="timeline-content">
+                    <h3>10th Standard - 80%</h3>
+                    <p>Completed my 10th class at Velammal Vidhyashram</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2023</div>
+                <div class="timeline-content">
+                    <h3>12th Standard - 93%</h3>
+                    <p>Completed my 12th class at Velammal Vidhyashram</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2023-2027</div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Engineering</h3>
+                    <p>Pursuing B.E. in Computer Science and Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card" onclick="toggleSkill(this)" style="--skill-level: 95%">
+                <img src="images/html.png" alt="HTML">
+                <div class="skill-info">
+                    <div class="skill-name">HTML</div>
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="skill-percent">95%</span>
+                </div>
+            </div>
+            <div class="skill-card" onclick="toggleSkill(this)" style="--skill-level: 90%">
+                <img src="images/css.png" alt="CSS">
+                <div class="skill-info">
+                    <div class="skill-name">CSS</div>
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+            </div>
+            <div class="skill-card" onclick="toggleSkill(this)" style="--skill-level: 85%">
+                <img src="images/js.png" alt="JavaScript">
+                <div class="skill-info">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+            </div>
+            <div class="skill-card" onclick="toggleSkill(this)" style="--skill-level: 80%">
+                <img src="images/python.png" alt="Python">
+                <div class="skill-info">
+                    <div class="skill-name">Python</div>
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+            </div>
+            <div class="skill-card" onclick="toggleSkill(this)" style="--skill-level: 75%">
+                <img src="images/c.png" alt="C">
+                <div class="skill-info">
+                    <div class="skill-name">C</div>
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+            </div>
+            <div class="skill-card" onclick="toggleSkill(this)" style="--skill-level: 70%">
+                <img src="images/java.png" alt="Java">
+                <div class="skill-info">
+                    <div class="skill-name">Java</div>
+                    <div class="progress-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-container">
+
+    <!-- Project 1: Pet Adoption System -->
+    <div class="project-card" onclick="openModal(
+      'Pet Adoption System',
+      'Pet Adoption System is a full-stack web application designed to connect abandoned or shelter pets with potential adopters. The platform allows users to browse through detailed pet profiles, complete with images, descriptions, and essential information like breed, age, and health status. It features dynamic search and filtering options to help users find pets that best match their preferences. Registered users can submit adoption requests directly through a user-friendly form. The system includes secure login and registration functionality, an admin dashboard for managing listings and requests, and a support chat feature. ',
+      ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'PHP', 'SQL'],
+      'images/pet.png'
+    )">
+      <h3>Pet Adoption System</h3>
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Bootstrap</span>
+        <span class="tag">PHP</span>
+        <span class="tag">SQL</span>
+      </div>
+      <div class="project-buttons">
+        <button class="btn-outline">Details</button>
+        <a href="https://github.com/Ruditha/pet_adoption_system" target="_blank" class="btn-primary">Code</a>
+      </div>
+    </div>
+
+    <!-- Project 3: Sportify (Figma) -->
+    <div class="project-card" onclick="openModal(
+      'Sportify',
+      'Sportify (Figma UI) is a mobile-first user interface design created in Figma for a fitness and sports equipment delivery application. The design focuses on offering a smooth and intuitive user experience with a visually clean layout and well-organized navigation flows. Users can easily browse through categorized sports gear, access personalized fitness recommendations, and place equipment orders seamlessly. The interface emphasizes instant gratification by minimizing steps and enhancing accessibility, making it ideal for fitness enthusiasts who seek quick solutions. The UI also includes features like onboarding screens, product filters, user profiles, and a responsive design optimized for mobile interaction.',
+      ['Figma'],
+      'images/sportify.png'
+    )">
+      <h3>Sportify (Figma UI)</h3>
+      <div class="tags">
+        <span class="tag">Figma</span>
+      </div>
+      <div class="project-buttons">
+        <button class="btn-outline">Details</button>
+        <a href="https://www.figma.com/proto/C33nopU8Pm3Y1kHhi1sXjD/sportify?node-id=1-2&starting-point-node-id=1%3A2" target="_blank" class="btn-primary">Design</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Project Modal -->
+ <div class="modal-overlay" id="projectModal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        
+        <img class="modal-image" id="modalImage" src="" alt="Project Image">
+        
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+        <div class="modal-tags" id="modalTags"></div>
+    </div>
+</div>
+
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+  <form id="contactForm" onsubmit="sendEmail(event)">
+    <div class="form-group">
+      <input type="text" id="name" name="name" placeholder=" " required>
+      <label for="name">Name</label>
+    </div>
+    <div class="form-group">
+      <input type="email" id="email" name="email" placeholder=" " required>
+      <label for="email">Email</label>
+    </div>
+    <div class="form-group">
+      <input type="text" id="subject" name="subject" placeholder=" ">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="form-group">
+      <textarea id="message" name="message" placeholder=" " rows="5" required></textarea>
+      <label for="message">Message</label>
+    </div>
+    <button type="submit" class="btn-primary">Send Message</button>
+  </form>
+</div>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>vilvashinit.23csd@kongu.edu</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Call</h4>
+                        <p>+91 9876543219</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Erode, Tamil Nadu, India</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/vilvashini-thirukanimuthu-0b39b1303/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Ruditha" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Vilvashini. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle skill cards
+        function toggleSkill(card) {
+            const isActive = card.classList.contains('active');
+            
+            // Close all other active skill cards
+            document.querySelectorAll('.skill-card.active').forEach(activeCard => {
+                if (activeCard !== card) {
+                    activeCard.classList.remove('active');
+                }
+            });
+            
+            // Toggle the clicked card
+            if (!isActive) {
+                card.classList.add('active');
+            } else {
+                card.classList.remove('active');
+            }
+        }
+
+        // Project modal functions
+        function openModal(title, description, tags, imageUrl) {
+            const modal = document.getElementById('projectModal');
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalDescription').textContent = description;
+            
+            const tagsContainer = document.getElementById('modalTags');
+            tagsContainer.innerHTML = '';
+            tags.forEach(tag => {
+    const tagElement = document.createElement('span');
+    tagElement.className = 'tag tag-tooltip';
+    tagElement.textContent = tag;
+
+    // Set tooltip description
+    tagElement.setAttribute('data-tooltip', techDescriptions[tag] || "No description available.");
+
+    tagsContainer.appendChild(tagElement);
+});
+            
+            document.getElementById('modalImage').src = imageUrl;
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('projectModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('projectModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Floating labels for contact form
+        document.querySelectorAll('.form-group input, .form-group textarea').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.nextElementSibling.style.top = '-0.5rem';
+                this.nextElementSibling.style.left = '0.8rem';
+                this.nextElementSibling.style.fontSize = '0.8rem';
+                this.nextElementSibling.style.color = '#0064ce';
+            });
+            
+            input.addEventListener('blur', function() {
+                if (!this.value) {
+                    this.nextElementSibling.style.top = '1rem';
+                    this.nextElementSibling.style.left = '1rem';
+                    this.nextElementSibling.style.fontSize = '1rem';
+                    this.nextElementSibling.style.color = '#6c757d';
+                }
+            });
+            
+            // Initialize labels
+            if (!input.value) {
+                input.nextElementSibling.style.top = '1rem';
+                input.nextElementSibling.style.left = '1rem';
+            } else {
+                input.nextElementSibling.style.top = '-0.5rem';
+                input.nextElementSibling.style.left = '0.8rem';
+                input.nextElementSibling.style.fontSize = '0.8rem';
+                input.nextElementSibling.style.color = '#0064ce';
+            }
+        });
+      
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal');
+      } else {
+        entry.target.classList.remove('reveal');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  document.querySelectorAll('.timeline-item').forEach(item => {
+    observer.observe(item);
+  });
+const techDescriptions = {
+    "HTML": "Used for structuring the content and layout of the web pages.",
+    "CSS": "Used for styling and designing the layout to make the UI visually appealing.",
+    "JavaScript": "Adds interactivity and dynamic behavior to the website.",
+    "Bootstrap": "Provides responsive design and pre-built components for faster UI development.",
+    "PHP": "Handles server-side logic, form processing, and communication with the database.",
+    "SQL": "Used to store, retrieve, and manage data in the MySQL database.",
+    "Webflow": "Used for visually designing and building responsive websites without code.",
+    "Figma": "Used for designing and prototyping user interfaces."
+};
+// Initialize EmailJS with your Public Key
+emailjs.init('SykCTGr9kpY5l51vi'); // Replace with your key from EmailJS dashboard
+
+// Function to handle form submission
+function sendEmail(e) {
+  e.preventDefault();
+  const form = e.target;
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  // Add current time to form data (for {{time}} in template)
+  const timeField = document.createElement('input');
+  timeField.type = 'hidden';
+  timeField.name = 'time';
+  timeField.value = new Date().toLocaleString();
+  form.appendChild(timeField);
+
+  // UI: Show loading state
+  submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+  submitBtn.disabled = true;
+
+  // Send form data
+  emailjs.sendForm('service_xv8wolc', 'template_8ou6x7j', form)
+  
+    .then(() => {
+      // Success: Show confirmation, reset form
+      showAlert('Message sent successfully!', 'success');
+      form.reset();
+    })
+    .catch((error) => {
+      // Error: Show error message
+      console.error('EmailJS error:', error);
+      showAlert('Failed to send message. Please try again.', 'error');
+    })
+    .finally(() => {
+      // Reset button state
+      submitBtn.innerHTML = 'Send Message';
+      submitBtn.disabled = false;
+      form.removeChild(timeField); // Clean up
+    });
+}
+
+// Custom alert function (matches your UI)
+function showAlert(message, type) {
+  const alertBox = document.createElement('div');
+  alertBox.className = `form-alert ${type}`;
+  alertBox.innerHTML = `
+    <p>${message}</p>
+    <button onclick="this.parentElement.remove()">OK</button>
+  `;
+  document.body.appendChild(alertBox);
+  setTimeout(() => alertBox.remove(), 5000);
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', sendEmail);
+  }
+});
+    </script>
+</body>
+</html>
